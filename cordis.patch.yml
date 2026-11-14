@@ -1,0 +1,9 @@
+# Inserts the voice-tools host plugin: the speak_text tool and the speech-to-text route.
+- insert:
+    - id: voice-tools
+      name: 'dsh-voice-tools'
+      config:
+        apiKeyEnv: DEEPSEEK_API_KEY
+        voice: stella
+        format: wav
+        speed: 1.0

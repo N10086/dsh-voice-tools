@@ -1,0 +1,58 @@
+{
+  "name": "dsh-voice-tools",
+  "version": "0.1.0",
+  "description": "DeepSeek TTS (text-to-speech tool for agents) and ASR (composer microphone) for the DeepSeek Harness",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "deepseek-harness",
+    "deepseek",
+    "tts",
+    "text-to-speech",
+    "asr",
+    "speech-to-text",
+    "voice"
+  ],
+  "homepage": "https://github.com/N10086/dsh-voice-tools#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N10086/dsh-voice-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/N10086/dsh-voice-tools/issues"
+  },
+  "author": "N10086",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "files": [
+    "lib",
+    "client",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ]
+}

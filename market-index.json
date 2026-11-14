@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Voice tools",
+    "zh": "语音工具"
+  },
+  "description": {
+    "en": "DeepSeek TTS speech synthesis for agents plus composer microphone transcription.",
+    "zh": "为 agent 提供 DeepSeek TTS 语音合成，以及输入框旁的语音识别。"
+  },
+  "metadata": {
+    "categories": {
+      "voice": {
+        "title": {
+          "en": "Voice",
+          "zh": "语音"
+        }
+      }
+    },
+    "labels": {
+      "tts": {
+        "title": {
+          "en": "Text to speech",
+          "zh": "语音合成"
+        }
+      },
+      "asr": {
+        "title": {
+          "en": "Speech to text",
+          "zh": "语音识别"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-voice-tools",
+      "title": {
+        "en": "Voice tools",
+        "zh": "语音工具"
+      },
+      "description": {
+        "en": "Lets the model synthesize speech on request (DeepSeek TTS), and adds a microphone button that appends a transcript to the existing draft.",
+        "zh": "让模型按需把文字合成为语音（DeepSeek TTS），并在输入框旁提供语音识别按钮；识别结果追加到已有草稿之后。"
+      },
+      "author": "N10086",
+      "homepage": "https://github.com/N10086/dsh-voice-tools",
+      "repository": {
+        "url": "https://github.com/N10086/dsh-voice-tools"
+      },
+      "metadata": {
+        "category": "voice",
+        "keywords": ["tts", "asr", "speech", "voice", "deepseek"],
+        "labels": ["tts", "asr"],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1776000000,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.3"
+          }
+        }
+      ]
+    }
+  ]
+}

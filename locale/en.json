@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Voice tools",
+    "description": "Lets the model synthesize speech on request (DeepSeek TTS), and adds a microphone button that appends a transcript to the existing draft."
+  }
+}
